@@ -235,10 +235,43 @@ nav button:hover::before{
   width:100%;
 }
 
+/* Animations */
+@keyframes arrow{
+  100%{
+      transform: translate(-50%,35px);
+  }
+}
+@keyframes move{
+  89%{
+    transform: translate(0,0);
+  }
+  90%{
+    transform: translate(20px,0);
+  }
+  91%{
+    transform: translate(-20px,0);
+  }
+  92%{
+    transform: translate(20px,0);
+  }
+  93%{
+    transform: translate(-20px,0);
+  }
+  94%{
+    transform: translate(20px,0);
+  }
+  95%{
+    transform: translate(-20px,0);
+  }
+  100%{
+    transform: translate(0,0);
+  }
+}
+
 /* RWA / Media queries */
 
 /* Logo */
-@media (orientation: landscape) and (max-height: 345px){
+@media (orientation: landscape) and (max-height: 305px){
   .leaks{
     opacity: 0;
   }
@@ -256,6 +289,10 @@ nav button:hover::before{
   }
   .invite h3{
     margin-top: -3%;
+  }
+  aside{
+    width: 100vw;
+    height: 100vh;
   }
  }
 
@@ -357,37 +394,4 @@ nav button:hover::before{
       margin-top: -5%;
       margin-bottom: -15%;
     } 
-  }
-
-/* Animations */
-@keyframes arrow{
-    100%{
-        transform: translate(-50%,35px);
-    }
-}
-@keyframes move{
-    89%{
-      transform: translate(0,0);
-    }
-    90%{
-      transform: translate(20px,0);
-    }
-    91%{
-      transform: translate(-20px,0);
-    }
-    92%{
-      transform: translate(20px,0);
-    }
-    93%{
-      transform: translate(-20px,0);
-    }
-    94%{
-      transform: translate(20px,0);
-    }
-    95%{
-      transform: translate(-20px,0);
-    }
-    100%{
-      transform: translate(0,0);
-    }
   }
